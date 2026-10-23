@@ -1,0 +1,4 @@
+setcps(0.8)
+
+$: note("e5").s("triangle")
+   .lpf(2500).decay(.08).sustain(0).gain(.3)
