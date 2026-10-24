@@ -1,0 +1,13 @@
+setcps(0.8)
+
+$: n("0 ~ 3 5 7 ~ 5 3 | 0 3 7 10 12 10 7 3")
+   .scale("A4:minor").s("square")
+   .lpf(3000).decay(.12).sustain(0).gain(.35)
+
+$: m("<0 0 -2 -4>*8")
+   .scale("A2:minor").s("triangle").gain(.6)
+
+
+$: s("bd*2 [~bd] bd").bank("RolandTR808").gain(.8)
+$: s("~ sd ~ sd").bank("RolandTR808").gain(.5)
+$: s("hh*8").gain(.25)
